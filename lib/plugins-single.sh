@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Init - Wp Pro Club

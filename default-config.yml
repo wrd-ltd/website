@@ -24,6 +24,7 @@ app:
     db_name: app_db_name
     db_user: app_db_user
     db_pass: app_db_pass
+    db_prefix: wp_
     app_host: example.test
     
   shell:
@@ -86,4 +87,10 @@ app:
     elementor_pro_license: ""
     wp_rocket_email: ""
     wp_rocket_key: ""
-    
+
+  config_templates:
+    env: default
+    plugins: default
+    theme: default
+    settings: default
+    extra: default

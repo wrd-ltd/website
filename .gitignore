@@ -1,0 +1,11 @@
+# dev
+.idea
+
+# project
+.env
+custom-config.yml
+
+# workflow
+app
+config
+web
