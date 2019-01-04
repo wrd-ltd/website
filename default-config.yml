@@ -14,7 +14,7 @@ app:
     workflow: bedrock
     wordpress: 4.9.*
     env: true
-    shell: true
+    shell: false
     plugins: true
     theme: true
     settings: true
@@ -26,12 +26,12 @@ app:
     db_pass: app_db_pass
     db_prefix: wp_
     app_host: example.test
-    
+
   shell:
-    before-install:
-      - "export COMPOSER_AUTH='{"bitbucket-oauth":{"bitbucket.org":{"consumer-key":"","consumer-secret":""}}}'"
-    after-install:
-      - "echo 'after install echo test'" 
+    before_install:
+      - https://gist.githubusercontent.com/script.sh
+    after_install:
+      - https://gist.githubusercontent.com/script.sh
 
   plugins:
     bulks: 

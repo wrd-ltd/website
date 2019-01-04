@@ -1,7 +1,7 @@
 # [init](https://init.wp-pro.club/)
 WordPress init like a PRO
 
-## Update config variables in the `custom-config.yml`:
+## Copy and update config variables in the `custom-config.yml`:
 
 * env
   * `db_name` - Database name
@@ -9,3 +9,7 @@ WordPress init like a PRO
   * `db_pass` - Database password
   * `app_host` - Database host
   * `db_prefix` - Database prefix
+
+* shell
+  * `before_install` - Install custom scripts via url
+  * `after_install` - Install custom scripts via url
