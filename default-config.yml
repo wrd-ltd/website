@@ -13,7 +13,7 @@ app:
   setup:
     workflow: bedrock
     wordpress: 4.9.*
-    env: true
+    env: false
     shell: false
     plugins: true
     theme: true
@@ -29,20 +29,22 @@ app:
 
   shell:
     before_install:
-      - https://gist.githubusercontent.com/script.sh
+      - https://gist.githubusercontent.com/example.sh
     after_install:
-      - https://gist.githubusercontent.com/script.sh
+      - https://gist.githubusercontent.com/example.sh
 
   plugins:
     bulks: 
       wpastra-full: *
       elementor-pro: *
     single:
-      advanced-custom-fields: *
-      wp-rocket: *
+      - name: plugin-name
+        package: wp-cli
+        ver: *
+        zip: ""
 
   theme:
-    name: astra
+    name: theme-name
     composer: false
     npm: false
     zip: false
@@ -90,7 +92,7 @@ app:
 
   config_templates:
     env: default
-    plugins: default
+    plugins_single: default
     theme: default
     settings: default
     extra: default

@@ -16,6 +16,12 @@ if [ "$conf_app_setup_env" == "true" ]; then
     bash ${PWD}/lib/env.sh
 fi
 
+# Run the plugins install after setup checking
+if [ "$conf_app_setup_plugins" == "true" ]; then
+    bash ${PWD}/lib/plugins-bulk.sh
+    bash ${PWD}/lib/plugins-single.sh
+fi
+
 # Run the after_install after setup checking
 if [ "$conf_app_setup_shell" == "true" ]; then
     bash ${PWD}/lib/after-install.sh

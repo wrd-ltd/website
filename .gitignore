@@ -4,6 +4,7 @@
 # project
 .env
 custom-config.yml
+/vendor/
 
 # workflow
 app

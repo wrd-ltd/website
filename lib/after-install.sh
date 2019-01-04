@@ -7,15 +7,13 @@
 source ${PWD}/lib/app-init.sh
 
 # Download shell scripts from config before project init
-if [ "$conf_app_setup_shell" == "true" ]; then
-    for script in "${conf_app_shell_after_install[@]}"
-    do
-        curl --silent $script > tmp-template2.sh
-        # If template downloaded, run the script
-        if [ -f "${PWD}/tmp-template.sh" ]; then
-            bash ${PWD}/tmp-template.sh
-            # delete the script after complete
-            rm ${PWD}/tmp-template.sh
-        fi
-    done
-fi
+for script in "${conf_app_shell_after_install[@]}"
+do
+    curl --silent $script > tmp-template2.sh
+    # If template downloaded, run the script
+    if [ -f "${PWD}/tmp-template.sh" ]; then
+        bash ${PWD}/tmp-template.sh
+        # delete the script after complete
+        rm ${PWD}/tmp-template.sh
+    fi
+done
