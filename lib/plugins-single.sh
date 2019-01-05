@@ -6,7 +6,7 @@
 
 source ${PWD}/lib/app-init.sh
 
-# Download default env template or custom from config
+# Download default plugin template or custom from config
 if [ "$conf_app_config_templates_plugins_single" == "default" ]; then
     curl --silent https://raw.githubusercontent.com/wp-pro-club/template-plugins/master/plugins-single-init.sh > tmp-template.sh
 else

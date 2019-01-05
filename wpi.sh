@@ -25,6 +25,21 @@ if [ "$conf_app_setup_workflow" != "false" ]; then
         bash ${PWD}/lib/plugins-bulk.sh
         bash ${PWD}/lib/plugins-single.sh
     fi
+
+    # Run the theme install after setup checking
+    if [ "$conf_app_setup_theme" == "true" ]; then
+        bash ${PWD}/lib/theme.sh
+    fi
+
+    # Run the settings script after setup checking
+    if [ "$conf_app_setup_settings" == "true" ]; then
+        bash ${PWD}/lib/settings.sh
+    fi
+
+    # Run the extra script after setup checking
+    if [ "$conf_app_setup_extra" == "true" ]; then
+        bash ${PWD}/lib/extra.sh
+    fi
 fi
 
 # Run the after_install after setup checking

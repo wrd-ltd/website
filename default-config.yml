@@ -11,14 +11,14 @@
 app:
 
   setup:
-    workflow: bedrock
-    wordpress: 4.9.*
+    workflow: wp-cli
+    wordpress: *
     env: false
     shell: false
-    plugins: true
-    theme: true
-    settings: true
-    extra: true
+    plugins: false
+    theme: false
+    settings: false
+    extra: false
     
   env:
     db_name: app_db_name
