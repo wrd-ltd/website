@@ -91,6 +91,7 @@ app:
     wp_rocket_key: ""
 
   config_templates:
+    workflow: default
     env: default
     plugins_single: default
     theme: default
