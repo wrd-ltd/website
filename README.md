@@ -4,7 +4,7 @@ WordPress init like a PRO
 ## Copy and update config variables in the `custom-config.yml`:
 
 * setup
-  * `workflow` - Set project workflow: bedrock; cdkrock; skeleton; wp-cli;
+  * `workflow` - Set project workflow: bedrock; cdk-comp/bedrock; cdkrock; wp-cli;
   * `wordpress` - Set custom WordPress version to install
   * `env` - Enable .env file init
   * `shell` - Enable before_install/after_install shell scripts running

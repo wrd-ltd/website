@@ -11,15 +11,20 @@ if [ "$conf_app_setup_shell" == "true" ]; then
     bash ${PWD}/lib/before-install.sh
 fi
 
-# Run the env making after setup checking
-if [ "$conf_app_setup_env" == "true" ]; then
-    bash ${PWD}/lib/env.sh
-fi
+# Run the workflow install after setup checking
+if [ "$conf_app_setup_workflow" != "false" ]; then
+    bash ${PWD}/lib/workflow.sh
 
-# Run the plugins install after setup checking
-if [ "$conf_app_setup_plugins" == "true" ]; then
-    bash ${PWD}/lib/plugins-bulk.sh
-    bash ${PWD}/lib/plugins-single.sh
+    # Run the env making after setup checking
+    if [ "$conf_app_setup_env" == "true" ]; then
+        bash ${PWD}/lib/env.sh
+    fi
+
+    # Run the plugins install after setup checking
+    if [ "$conf_app_setup_plugins" == "true" ]; then
+        bash ${PWD}/lib/plugins-bulk.sh
+        bash ${PWD}/lib/plugins-single.sh
+    fi
 fi
 
 # Run the after_install after setup checking

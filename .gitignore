@@ -10,3 +10,8 @@ custom-config.yml
 app
 config
 web
+/composer.json
+/composer.lock
+/wp-cli.yml
+/post-install.sh
+/post-update.sh

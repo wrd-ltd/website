@@ -8,9 +8,9 @@ source ${PWD}/lib/app-init.sh
 
 # Download default env template or custom from config
 if [ "$conf_app_config_templates_plugins_single" == "default" ]; then
-    curl https://raw.githubusercontent.com/wp-pro-club/template-plugins/master/plugins-single-init.sh > tmp-template.sh
+    curl --silent https://raw.githubusercontent.com/wp-pro-club/template-plugins/master/plugins-single-init.sh > tmp-template.sh
 else
-    curl $conf_app_config_templates_env > tmp-template.sh
+    curl --silent $conf_app_config_templates_env > tmp-template.sh
 fi
 
 # If template downloaded, run the script
