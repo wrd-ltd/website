@@ -44,9 +44,9 @@ app:
         zip: ""
 
   theme:
-    name: theme-name
-    composer: false
-    npm: false
+    name: astra
+    package: wp-cli
+    ver: *
     zip: false
     
   settings:
