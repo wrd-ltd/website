@@ -70,12 +70,10 @@ elif [ "$conf_app_setup_workflow" == "wp-cli" ]; then
     if [ "$conf_app_setup_wordpress" != "*" ]; then
         wp_version="--version=$conf_app_setup_wordpress"
     fi
-    # Making directory for WordPress
-    mkdir web && cd web
+    # Define WordPress web path
+    echo "path: web" > wp-cli.yml
     # Download Wordpress
-    wp core download $wp_version
+    wp core download --path=web
     # Generate wp-config.php
     wp core config --dbname=$conf_app_env_db_name --dbuser=$conf_app_env_db_user --dbpass=$conf_app_env_db_pass --dbhost=localhost
-    # Define WordPress web path
-    cd ../ && echo "path: web" > wp-cli.yml
 fi
