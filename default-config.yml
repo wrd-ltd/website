@@ -58,9 +58,10 @@ app:
     default_ping_status: 0
     # General
     blogdescription: Example project
-    date_format: "d/m/Y"
-    time_format: "H:i"
-    timezone_string: "Europe/London"
+    date_format: d/m/Y
+    time_format: H:i
+    timezone_string: Europe/London
+    start_of_week: 0
     # Media
     large_size_h: 0
     large_size_w: 0
@@ -73,17 +74,19 @@ app:
     convert_smilies: false
     uploads_use_yearmonth_folders: 0
     # Permalinks
-    permalink_structure: "/%postname%/"
+    permalink_structure: /%postname%/
     # Privacy
     blog_public: 0
+    # Reading
     frontpage_name: Homepage
-    page_on_front: true
+    page_on_front: 4
+    show_on_front: page
     # User
-    admin_email: ""
-    admin_password: ""
-    admin_user: ""
-    first_name: ""
-    last_name: ""
+    admin_email: example@wp-pro.club
+    admin_password: wp-pro-club
+    admin_user: wp-pro-club
+    first_name: wp-pro-club
+    last_name: wp-pro-club
     
   extra:
     elementor_pro_license: ""
