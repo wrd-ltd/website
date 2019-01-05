@@ -29,3 +29,9 @@ WordPress init like a PRO
   * `package` - Install plugin via: wp-cli; wpackagist; wp-pro-club;
   * `ver` - Set plugin version
   * `zip` - Set URL for plugin zip dist
+
+* theme
+  * `name` - Theme name in: WordPress repository; wpackagist repository; git repository;
+  * `package` - Install theme via: wp-cli; wpackagist; wp-pro-club;
+  * `ver` - Set theme version
+  * `zip` - Set URL for theme zip dist
