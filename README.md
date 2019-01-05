@@ -35,3 +35,34 @@ WordPress init like a PRO
   * `package` - Install theme via: wp-cli; wpackagist; wp-pro-club;
   * `ver` - Set theme version
   * `zip` - Set URL for theme zip dist
+
+* settings - for more details take a look - [WP-CLI](https://codex.wordpress.org/Option_Reference)
+  * `comment_moderation`
+  * `comment_registration`
+  * `default_comment_status`
+  * `default_pingback_flag`
+  * `default_ping_status`
+  * `blogdescription`
+  * `date_format`
+  * `time_format`
+  * `timezone_string`
+  * `start_of_week`
+  * `large_size_h`
+  * `large_size_w`
+  * `medium_size_h`
+  * `medium_size_w`
+  * `thumbnail_crop`
+  * `thumbnail_size_h`
+  * `thumbnail_size_w`
+  * `convert_smilies`
+  * `uploads_use_yearmonth_folders`
+  * `permalink_structure`
+  * `blog_public`
+  * `frontpage_name`
+  * `page_on_front`
+  * `show_on_front`
+  * `admin_email`
+  * `admin_password`
+  * `admin_user`
+  * `first_name`
+  * `last_name`
