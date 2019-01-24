@@ -4,6 +4,10 @@
 # by DimaMinka (https://dimaminka.com)
 # https://github.com/wp-pro-club/init
 
+# Color constants
+readonly GRN='\033[0;32m'
+readonly NC='\033[0m'
+
 source ${PWD}/lib/app-init.sh
 
 # Run the before_install after setup checking
@@ -46,3 +50,27 @@ fi
 if [ "$conf_app_setup_shell" == "true" ]; then
     bash ${PWD}/lib/after-install.sh
 fi
+
+# Update project files from github
+function wpi_update {
+  # Clone the repo
+  curl -LOks https://github.com/wp-pro-club/init/archive/master.zip
+  # Unzip the repo
+  unzip -q master.zip
+  # Delete old files
+  rm -f lib/* && mv "$0" "$0-old"
+  # Copy new files
+  cp -R init-master/lib/ . && cp  init-master/* .
+  # Set script executable
+  chmod +x "$0"
+  # Delete repo directory and archive
+  rm -rf init-master && rm master.zip
+
+  echo -e "${GRN}All files was succesfully updated!${NC}"
+  # Delete old version of itself
+  rm "$0-old"
+}
+
+case "$1" in
+  "--update") wpi_update "${@:2}";;
+esac
