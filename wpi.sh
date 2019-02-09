@@ -29,7 +29,7 @@ then
   }
 
   case "$1" in
-  "--update") wpi_update "${@:2}";;
+  "--self-update") wpi_update "${@:2}";;
   esac
 else
   source ${PWD}/lib/app-init.sh
