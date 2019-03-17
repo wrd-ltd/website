@@ -4,36 +4,13 @@
 # by DimaMinka (https://dimaminka.com)
 # https://github.com/wp-pro-club/init
 
-# Color constants
-readonly GRN='\033[0;32m'
-readonly NC='\033[0m'
+source ${PWD}/lib/app-init.sh
 
 if [[ "$1" ]]
 then
-  # Update project files from github
-  function wpi_update {
-    # Clone the repo
-    curl -LOks https://github.com/wp-pro-club/init/archive/master.zip
-    # Unzip the repo
-    unzip -q master.zip
-    # Delete old files
-    rm -f lib/*
-    # Copy new files
-    cp -R init-master/lib/ . && cp -R init-master/* .
-    # Set script executable
-    chmod +x "$0"
-    # Delete repo directory and archive
-    rm -rf init-master && rm master.zip
-
-    echo -e "${GRN}All files was succesfully updated!${NC}"
-  }
-
-  case "$1" in
-  "--self-update") wpi_update "${@:2}";;
-  esac
+    # Run the update script
+    bash ${PWD}/lib/update.sh $1
 else
-  source ${PWD}/lib/app-init.sh
-
   # Run the before_install after setup checking
   if [ "$conf_app_setup_shell" == "true" ]; then
       bash ${PWD}/lib/before-install.sh
