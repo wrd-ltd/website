@@ -19,7 +19,7 @@ then
     # Delete old files
     rm -f lib/*
     # Copy new files
-    cp -R init-master/lib/ . && cp init-master/* .
+    cp -R init-master/lib/ . && cp -R init-master/* .
     # Set script executable
     chmod +x "$0"
     # Delete repo directory and archive
