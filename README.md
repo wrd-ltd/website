@@ -1,6 +1,9 @@
 # [init](https://init.wp-pro.club/)
 WordPress init like a PRO
 
+## CLI commands:
+* `--self-update` - Update the WPI from github to latest version
+
 ## Copy and update config variables in the `custom-config.yml`:
 
 * setup
@@ -10,6 +13,7 @@ WordPress init like a PRO
   * `shell` - Enable before_install/after_install shell scripts running
   * `plugins` - Enable plugins install
   * `theme` - Enable theme install
+  * `child_theme` - Enable child theme install/generate
   * `settings` - Enable WordPress setup
   * `extra` - Enable extra scripts running for license etc
 
@@ -33,6 +37,13 @@ WordPress init like a PRO
 * theme
   * `name` - Theme name in: WordPress repository; wpackagist repository; git repository;
   * `package` - Install theme via: wp-cli; wpackagist; wp-pro-club;
+  * `ver` - Set theme version
+  * `zip` - Set URL for theme zip dist
+
+* child-theme
+  * `generate_scaffold` - Generate child theme via wp cli scaffold
+  * `name` - Child theme name in: WordPress repository; wpackagist repository; git repository;
+  * `package` - Install theme via: wp-cli; wpackagist; composer_bitbucket;
   * `ver` - Set theme version
   * `zip` - Set URL for theme zip dist
 
