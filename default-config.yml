@@ -17,6 +17,7 @@ app:
     shell: false
     plugins: false
     theme: false
+    child_theme: false
     settings: false
     extra: false
     
@@ -45,6 +46,13 @@ app:
 
   theme:
     name: astra
+    package: wp-cli
+    ver: *
+    zip: false
+
+  child_theme:
+    generate_scaffold: true
+    name: astra-child
     package: wp-cli
     ver: *
     zip: false
@@ -98,5 +106,6 @@ app:
     env: default
     plugins_single: default
     theme: default
+    child_theme: default
     settings: default
     extra: default

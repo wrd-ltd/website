@@ -41,6 +41,11 @@ else
           bash ${PWD}/lib/theme.sh
       fi
 
+      # Run the child theme install after setup checking
+      if [ "$conf_app_setup_child_theme" == "true" ]; then
+          bash ${PWD}/lib/child-theme.sh
+      fi
+
       # Run the extra script after setup checking
       if [ "$conf_app_setup_extra" == "true" ]; then
           bash ${PWD}/lib/extra.sh
