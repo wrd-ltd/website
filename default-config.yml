@@ -46,6 +46,7 @@ app:
 
   theme:
     name: astra
+    rename: ""
     package: wp-cli
     ver: *
     zip: false
