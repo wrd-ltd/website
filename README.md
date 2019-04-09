@@ -39,6 +39,7 @@ WordPress init like a PRO
   * `rename` - Rename the theme - supported only with composer_bitbucket, remove if not used;
   * `package` - Install theme via: wp-cli; wpackagist; composer_bitbucket;
   * `ver` - Set theme version
+  * `branch` - Set theme git branch, the `ver` must be dev-master
   * `zip` - Set URL for theme zip dist
 
 * child-theme
