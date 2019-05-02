@@ -33,6 +33,7 @@ WordPress init like a PRO
   * `package` - Install plugin via: wp-cli; wpackagist; wp-pro-club;
   * `ver` - Set plugin version
   * `zip` - Set URL for plugin zip dist
+  * `branch` - (only for package=composer) Set git branch, the `ver` must be dev-master
 
 * theme
   * `name` - Theme name in: WordPress repository; wpackagist repository; git repository;
