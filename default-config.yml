@@ -76,6 +76,7 @@ app:
     time_format: H:i
     timezone_string: Europe/London
     start_of_week: 0
+    site_switch_language: en_US
     # Media
     large_size_h: 0
     large_size_w: 0
