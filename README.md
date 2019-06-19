@@ -11,6 +11,7 @@ WordPress init like a PRO
   * `wordpress` - Set custom WordPress version to install
   * `env` - Enable .env file init
   * `shell` - Enable before_install/after_install shell scripts running
+  * `mu_plugins` - Enable mu plugins install
   * `plugins` - Enable plugins install
   * `theme` - Enable theme install
   * `child_theme` - Enable child theme install/generate
@@ -27,6 +28,10 @@ WordPress init like a PRO
 * shell
   * `before_install` - Install custom scripts via url
   * `after_install` - Install custom scripts via url
+
+* mu_plugins
+  * `name` - Plugin name for rename
+  * `zip` - Set URL for plugin file
 
 * plugins_single
   * `name` - Plugin name in: WordPress repository; wpackagist repository; git repository;
@@ -61,6 +66,7 @@ WordPress init like a PRO
   * `time_format`
   * `timezone_string`
   * `start_of_week`
+  * `site_switch_language`
   * `large_size_h`
   * `large_size_w`
   * `medium_size_h`
