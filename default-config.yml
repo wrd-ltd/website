@@ -15,6 +15,7 @@ app:
     wordpress: *
     env: false
     shell: false
+    mu_plugins: false
     plugins: false
     theme: false
     child_theme: false
@@ -25,14 +26,18 @@ app:
     db_name: app_db_name
     db_user: app_db_user
     db_pass: app_db_pass
-    db_prefix: wp_
-    app_host: example.test
+    db_prefix: wp_wpi_
+    app_host: wpi.test
 
   shell:
     before_install:
       - https://gist.githubusercontent.com/example.sh
     after_install:
       - https://gist.githubusercontent.com/example.sh
+
+  mu_plugins:
+    - name: mu-plugin-name
+      zip: ""
 
   plugins:
     bulks: 
@@ -53,7 +58,7 @@ app:
 
   child_theme:
     generate_scaffold: true
-    name: astra-child
+    name: child-theme
     package: wp-cli
     ver: *
     zip: false
@@ -105,6 +110,7 @@ app:
   config_templates:
     workflow: default
     env: default
+    mu_plugins: default
     plugins_single: default
     theme: default
     child_theme: default

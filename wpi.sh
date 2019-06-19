@@ -31,6 +31,11 @@ else
       fi
 
       # Run the plugins install after setup checking
+      if [ "$conf_app_setup_mu_plugins" == "true" ]; then
+          bash ${PWD}/lib/mu-plugins.sh
+      fi
+
+      # Run the plugins install after setup checking
       if [ "$conf_app_setup_plugins" == "true" ]; then
           bash ${PWD}/lib/plugins-bulk.sh
           bash ${PWD}/lib/plugins-single.sh
