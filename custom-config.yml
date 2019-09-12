@@ -51,6 +51,10 @@ app:
         package: wp-cli
         ver: *
         zip: ""
+      - name: svg-support
+        package: wp-cli
+        ver: *
+        zip: ""
       - name: wordpress-seo
         package: wp-cli
         ver: *
