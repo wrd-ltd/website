@@ -19,7 +19,7 @@ app:
     plugins: true
     theme: true
     child_theme: false
-    settings: true
+    settings: false
     extra: false
     
   env:
@@ -73,11 +73,11 @@ app:
         zip: ""
       - name: elementor-pro
         package: wp-pro-club
-        ver: v2.6.5
+        ver: v2.7.2
         zip: ""
       - name: wp-rocket
         package: wp-pro-club
-        ver: v3.3.7
+        ver: v3.4.0.5
         zip: ""
 
   theme:

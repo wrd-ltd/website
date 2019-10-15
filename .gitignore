@@ -15,3 +15,6 @@ web
 /wp-cli.yml
 /post-install.sh
 /post-update.sh
+Movefile
+ee-config.php
+/logs

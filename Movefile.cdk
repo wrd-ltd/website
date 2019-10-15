@@ -1,0 +1,75 @@
+global:
+  sql_adapter: "wpcli"
+
+local:
+  vhost: "http://wrd.test"
+  wordpress_path: "/var/www/wrd.test/web/wp" # use an absolute path here
+
+  database:
+    name: "wrd_test"
+    user: "wrd_test"
+    password: "RT39NlnDapGIX0S"
+    host: "localhost"
+
+  paths: # you can customize wordpress internal paths
+    wp_content: "wp-content"
+    uploads: "../app/uploads"
+    plugins: "../app/plugins/wp-rocket"
+    mu_plugins: "../app/mu-plugins"
+    themes: "../app/themes"
+    languages: "../app/languages"
+
+dev:
+  vhost: "https://https://webrock.digital"
+  wordpress_path: "/home/wrd-prod/webapps/wrd_prod" # use an absolute path here
+
+  database:
+    name: "wrdProd_1568201605"
+    user: "wrdProd_1568201605"
+    password: "ymcwjdv2FYL21uCYsgP1zX8LAF3ALmB949Dff8UF69dF0UqhZfM7Q"
+    host: "localhost"
+
+  exclude:
+    - "*.sql"
+    - "*.gz"
+    - ".DS_Store"
+    - ".env.example"
+    - ".git/"
+    - ".gitignore"
+    - ".gitkeep"
+    - ".idea"
+    - ".sass-cache/"
+    - "bin/"
+    - "cache"
+    - "composer.json"
+    - "composer.lock"
+    - "conf"
+    - "ee-config.php"
+    - "elm_test.sql"
+    - "htdocs"
+    - "logs"
+    - "node_modules/"
+    - "post-install.sh"
+    - "post-update.sh"
+    - "public"
+    - "tmp/*"
+    - "CHANGELOG.md"
+    - "Gemfile*"
+    - "LICENSE.md"
+    - "Movefile"
+    - "Movefile.example"
+    - "README.md"
+    - "Thumbs.db"
+    - "afflinkpress.htm"
+    - "*.mp4"
+
+  paths: # you can customize wordpress internal paths
+    themes: "live/web/app/themes"
+    plugins: "live/web/app/plugins"
+    wp_content: "live/web/wp/wp-content"
+    uploads: "app/uploads"
+
+  ssh:
+    host: "134.209.30.205"
+    user: "wrd-prod"
+    rsync_options: "--verbose" # Additional rsync options, optional
