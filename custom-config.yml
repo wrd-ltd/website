@@ -51,6 +51,10 @@ app:
         package: wp-cli
         ver: *
         zip: ""
+      - name: optimole-wp
+        package: wp-cli
+        ver: *
+        zip: ""
       - name: svg-support
         package: wp-cli
         ver: *
@@ -79,6 +83,10 @@ app:
         package: wp-pro-club
         ver: v3.4.0.5
         zip: ""
+      - name: acf-plus-wrd
+        package: composer
+        ver: master
+        zip: https://github.com/DimaMinka/acf-plus-wrd.git
 
   theme:
     name: hello-elementor
