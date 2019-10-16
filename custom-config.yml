@@ -83,10 +83,10 @@ app:
         package: wp-pro-club
         ver: v3.4.0.5
         zip: ""
-      - name: acf-plus-wrd
+      - name: cdk_team/acf-plus-wrd
         package: composer
         ver: master
-        zip: https://github.com/DimaMinka/acf-plus-wrd.git
+        zip: ""
 
   theme:
     name: hello-elementor
